@@ -16,7 +16,7 @@
         path: /home/coder/project/labfiles/L521725/Ansible-lesson/Ansible_eos/configs/{{ inventory_hostname }}
         state: directory
 
-    - name: creta interface configs
+    - name: create interface configs
       template: 
         src:  /home/coder/project/labfiles/L521725/Ansible-lesson/Ansible_eos/templates/create_interfaces.j2
         dest: /home/coder/project/labfiles/L521725/Ansible-lesson/Ansible_eos/configs/{{ inventory_hostname }}/{{ inventory_hostname }}_interfaces.cfg
